@@ -47,8 +47,7 @@ export class MyToDoList extends LitElement {
     { text: '歯を磨く', completed: true }
   ];
 
-  @property({type: Boolean})
-  disabled = true
+  @state() disabled = true
 
   @query('.todo-input')
   input!: HTMLInputElement;
